@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>teacher hiring form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Professors Hiring For College</h1>
+
+    <script>
+      let age = prompt("Enter Your Age");
+      let degree = prompt(
+        "Enter Your Degree : like: masters,m.fill,PHD,Graduate"
+      );
+      let experience = prompt("Enter Your Teaching experience : in years");
+
+      if (
+        age >= 25 &&
+        (degree === "master" || degree === "phd") &&
+        experience >= 1
+      ) {
+        alert("You Are Perfect For Teaching");
+      } else {
+        alert("You Do Not Fit Our Required Criteria");
+      }
+    </script>
+  </body>
+</html>
