@@ -6,23 +6,33 @@
   </head>
   <body>
     <h1>Professors Hiring For College</h1>
+    <form class="myform">
+      <input type="text" id="username" placeholder="Enter Your Name ..." />
+      <input type="number" id="age" placeholder="Enter Your Age ..." />
+      <input
+        type="number"
+        id="experience"
+        placeholder="Enter Your Experience ..."
+      />
+      <input
+        type="number"
+        id="percentage"
+        placeholder="Enter Last Qualification Percenatge ..."
+      />
 
-    <script>
-      let age = prompt("Enter Your Age");
-      let degree = prompt(
-        "Enter Your Degree : like: masters,m.fill,PHD,Graduate"
-      );
-      let experience = prompt("Enter Your Teaching experience : in years");
+      <div class="gender-group">
+        <label> <input type="radio" name="gender" value="male" /> Male </label>
 
-      if (
-        age >= 25 &&
-        (degree === "master" || degree === "phd") &&
-        experience >= 1
-      ) {
-        alert("You Are Perfect For Teaching");
-      } else {
-        alert("You Do Not Fit Our Required Criteria");
-      }
-    </script>
+        <label>
+          <input type="radio" name="gender" value="female" /> Female
+        </label>
+      </div>
+
+      <p id="output" class="output"></p>
+
+      <button onclick="calculate_criteria(event)" id="btn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
   </body>
 </html>

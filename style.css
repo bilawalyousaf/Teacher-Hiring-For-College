@@ -2,14 +2,92 @@
   margin: 0;
   padding: 0;
   font-family: serif;
+  font-weight: 900;
+  font-style: italic;
 }
 body {
   background-image: url("images/image3.jpg");
-  background-size: 100% auto; /* width full, height auto */
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top center;
 }
 h1 {
   display: flex;
   justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  gap: 10px;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: lightgray;
+  box-shadow: 1px 2px 2px black;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"] {
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-decoration-break: slice;
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: none;
+  font-weight: 900;
+  font-style: italic;
+  color: black;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: black;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gender-group input[type="radio"] {
+  align-self: center;
+}
+
+#btn {
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn:hover {
+  background: linear-gradient(135deg, #0056d2, #003c99);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#btn:active {
+  transform: scale(0.97);
+}
+.output {
+  background-color: blue;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
 }
