@@ -14,7 +14,12 @@ function calculate_criteria(event) {
         result = "Congrats!! " + username + " You Are Hiring For Teaching"
     }
 
-    document.getElementById("output").innerText = result
+    
+    let output = document.getElementById("output");
+    output.innerText = result;
+    output.style.display = "block";  // box show kare
+
+
 
 }
 
